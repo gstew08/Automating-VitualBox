@@ -2,7 +2,7 @@
 
 REASONS
 
-decided to automate the process to create a vn instead of having to manually enter each part and constantly forgetting commands.
+decided to automate the process to create a vm instead of having to manually enter each part and constantly forgetting commands.
 configured to prompt for user input on name, size etc.
 
 

@@ -50,7 +50,7 @@ else
      VBoxManage modifyvm "$input_variable" --memory $mem --acpi on --boot1 dvd --nic1 bridged --bridgeadapter1 p2p1 --vrde on
      VBoxManage createhd --filename $input_variable.vdi --size $disk #10000 = 10GB
      VBoxManage storagectl "$input_variable" --name "IDE Controller$number" --add ide
-     VBoxManage storageattach "$input_variable" --storagectl "IDE Controller$number" --port 0 --device 0 --type hdd --medium /home/gareth/vm/$input_variable.vdi
+     VBoxManage storageattach "$input_variable" --storagectl "IDE Controller$number" --port 0 --device 0 --type hdd --medium /path/to/vm_folder/$input_variable.vdi
      VBoxManage storageattach "$input_variable" --storagectl "IDE Controller$number" --port 1 --device 0 --type dvddrive --medium $path
 
    else echo -n "Would you like to modify a VM (y/n)?"
